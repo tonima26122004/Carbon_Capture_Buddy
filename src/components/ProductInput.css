@@ -1,0 +1,146 @@
+/* Styling for the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Title styling */
+.title-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 18px;
+  color: #9ed59c;
+  border-radius: 15px 15px 0 0;
+  border: 2px solid white;
+  width: 60%;
+  max-width: 1000px;
+  height: 51px;
+  background-image: url('/images/Group 9.svg');
+  background-size: contain;
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 0 0;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the background image */
+.main-title:hover {
+  transform: scale(1.01); /* Fix scale typo */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 1024px) {
+  .main-title {
+    width: 80%;
+    height: 45px;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    width: 85%;
+    height: 40px;
+    margin: 15px 0 0 0;
+  }
+}
+
+/* Page container for the main content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 2000px;
+  height: calc(100vh - 40px);
+  margin-top: 2px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #3b602f;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Input container */
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Product Input Box */
+.product-input {
+  width: 100%;
+  padding: 15px 50px 15px 15px; /* Added right padding for icons */
+  font-size: 18px;
+  border: 2px solid #3b602f;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for all hover effects */
+}
+
+/* Hover effect for input box */
+.product-input:hover {
+  border-color: #c8dbca; /* Green border color on hover */
+  background-color: #f3f8f0; 
+  transform: scale(1.02); /* Slightly increase scale */
+}
+
+/* Icon container positioning */
+.icon-container {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Position to the right inside the input box */
+  transform: translateY(-50%); /* Vertically center the icons */
+  display: flex;
+  gap: 10px; /* Space between the icons */
+  align-items: center; /* Ensure vertical centering */
+}
+
+/* Individual icon styling */
+.icon-left, .icon-right {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling and opacity */
+}
+
+/* Hover effect for icons */
+.icon-left:hover, .icon-right:hover {
+  transform: scale(1.2); /* Slightly scale up the icons */
+  opacity: 0.8; /* Slightly fade the icons */
+}
+
+/* Placeholder text styling */
+.product-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
