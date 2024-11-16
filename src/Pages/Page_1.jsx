@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../components/nav'
 import Content from '../components/Content'
-
+import Button from '../components/Button'
 
 
 const Page_1 = () => {
