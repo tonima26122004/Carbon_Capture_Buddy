@@ -25,8 +25,6 @@ const Content = () => {
 
          <Button/>
         </div>
-        
-
         <div>
         <img className='content_img' src="/images/Group 4.svg" alt="" />
         </div>
